@@ -42,9 +42,31 @@ Traditional monitoring systems rely on manual inspections or cloud-based IoT ana
 Unlike traditional neural networks, SNNs process information only when events occur, making them ideal for embedded industrial environments.
 
 ---
+## 🏗️ System Architecture
 
-## 🏗 System Architecture
+```mermaid
+graph TD
+    A[Mechanical Machine] --> B[Industrial Sensors]
+    
+    subgraph Data Acquisition
+    B --> B1[Accelerometer / IMU / Load Cell / DVS]
+    B1 --> C[Analog Front End - AFE]
+    end
 
+    C --> D[Microcontroller Unit - MCU]
+    
+    subgraph Neuromorphic Processing
+    D --> E[FPGA: Spike Encoding & AER Generation]
+    E --> F[SynSense Neuromorphic Chip: SNN Engine]
+    end
+
+    F --> G[Edge Controller / PLC]
+    G --> H[Machine-to-Machine Communication]
+
+    %% Styling
+    style F fill:#f9f,stroke:#333,stroke-width:2px
+    style E fill:#bbf,stroke:#333,stroke-width:1px
+```
 ---
 
 ## 🔧 Implementation Flow
