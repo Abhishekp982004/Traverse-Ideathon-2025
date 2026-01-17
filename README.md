@@ -1,4 +1,5 @@
 # 🚀 Smart Adaptive Machinery  
+### Top 7 Finalist of Triverse Ideathon 2025 organized by Centre of Cognitive Computing and Computational Intelligence (C3I), PES University and powered by HCLTech
 ### Neuromorphic Edge for Real-Time Mechanical Automation
 
 Smart Adaptive Machinery is a next-generation industrial intelligence system that transforms conventional machines into **self-monitoring, self-learning, and self-adjusting systems** using **Neuromorphic Edge AI** and **Spiking Neural Networks (SNNs)**.
